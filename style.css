@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f1f3f0;
+    color: #3a4131;
+    line-height: 1.6;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    overflow: hidden;
+}
+
+header {
+    background-color: #556b2f;
+    color: #ffffff;
+    padding: 40px;
+    text-align: left;
+}
+
+header h1 {
+    font-size: 2.8em;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+header .title {
+    font-size: 1.2em;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+.resume-content {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.left-column {
+    background-color: #f8f9f7;
+    padding: 30px;
+    border-right: 1px solid #dce2d1;
+}
+
+.right-column {
+    padding: 30px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #556b2f;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #8a9a5b;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.left-column ul {
+    list-style: none;
+}
+
+.left-column ul li {
+    margin-bottom: 10px;
+    font-size: 0.95em;
+    color: #4a543f;
+}
+
+.contact-info a {
+    color: #556b2f;
+    text-decoration: none;
+    word-break: break-all;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.skill-group {
+    margin-bottom: 15px;
+}
+
+.skill-group h3 {
+    font-size: 1em;
+    color: #708238;
+    margin-bottom: 5px;
+}
+
+.about p {
+    font-size: 1.05em;
+    text-align: justify;
+}
+
+.item {
+    margin-bottom: 20px;
+}
+
+.item h3 {
+    font-size: 1.2em;
+    color: #3a4131;
+}
+
+.date {
+    font-style: italic;
+    color: #8a9a5b;
+    font-size: 0.9em;
+    margin-bottom: 8px;
+}
+
+.item ul {
+    margin-left: 20px;
+    color: #4a543f;
+}
+
+.item ul li {
+    margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    .resume-content {
+        grid-template-columns: 1fr;
+    }
+    .left-column {
+        border-right: none;
+        border-bottom: 1px solid #dce2d1;
+    }
+}
